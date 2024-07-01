@@ -1,33 +1,63 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockDataInvoices } from "../../data/mockData";
+import { mockDataClaims } from "../../data/mockData";
 import Header from "../../components/Header";
 
-const Invoices = () => {
+const Claims = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
     { field: "id", headerName: "ID" },
     {
-      field: "name",
-      headerName: "Name",
+      field: "firstName",
+      headerName: "First Name",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "lastName",
+      headerName: "Last Name",
+      flex: 1,
+    },    
+    {
+      field: "school",
+      headerName: "School",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "lunchId",
+      headerName: "Lunch ID",
+      flex: 1,
+    },
+    {
+      field: "description",
+      headerName: "Description",
+      flex: 1,
+    },
+    {
+      field: "partReplaced",
+      headerName: "Part Replaced",
+      flex: 1,
+    },
+    {
+      field: "guardianEmail",
+      headerName: "Lunch ID",
+      flex: 1,
+    },
+    {
+      field: "hasInsurance",
+      headerName: "Insurance?",
+      flex: 1,
+    },
+    {
+      field: "notes",
+      headerName: "Notes",
       flex: 1,
     },
     {
       field: "cost",
-      headerName: "Cost",
+      headerName: "cost",
       flex: 1,
       renderCell: (params) => (
         <Typography color={colors.greenAccent[500]}>
@@ -37,14 +67,24 @@ const Invoices = () => {
     },
     {
       field: "date",
-      headerName: "Date",
+      headerName: "Date Reported",
+      flex: 1,
+    },
+    {
+      field: "draftCreated",
+      headerName: "Draft Created",
+      flex: 1,
+    },
+    {
+      field: "noticeSent",
+      headerName: "Notice Sent?",
       flex: 1,
     },
   ];
 
   return (
     <Box m="20px">
-      <Header title="INVOICES" subtitle="List of Invoice Balances" />
+      <Header title="CLAIMS" subtitle="List of Broken Device Claims 2023-2024" />
       <Box
         m="40px 0 0 0"
         height="75vh"
@@ -74,10 +114,10 @@ const Invoices = () => {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} />
+        <DataGrid checkboxSelection rows={mockDataClaims} columns={columns} />
       </Box>
     </Box>
   );
 };
 
-export default Invoices;
+export default Claims;
