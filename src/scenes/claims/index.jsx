@@ -66,18 +66,88 @@ const Claims = () => {
       ),
     },
     {
-      field: "date",
-      headerName: "Date Reported",
+      field: "StudentId",
+      headerName: "Student ID",
       flex: 1,
     },
     {
-      field: "draftCreated",
-      headerName: "Draft Created",
+      field: "FirstName",
+      headerName: "First Name",
       flex: 1,
     },
     {
-      field: "noticeSent",
-      headerName: "Notice Sent?",
+      field: "LastName",
+      headerName: "Last Name",
+      flex: 1,
+    },
+    {
+      field: "School",
+      headerName: "School",
+      flex: 1,
+    },
+    {
+      field: "SubmittedBy",
+      headerName: "Submitted By",
+      flex: 1,
+    },
+    {
+      field: "grade_level",
+      headerName: "Grade Level",
+      flex: 1,
+    },
+    {
+      field: "claim_nature",
+      headerName: "Claim Nature",
+      flex: 1,
+    },
+    {
+      field: "rent_or_byob",
+      headerName: "Rent/BYOD",
+      flex: 1,
+    },
+    {
+      field: "description",
+      headerName: "Description",
+      flex: 1,
+    },
+    {
+      field: "number_of_claims",
+      headerName: "Claim #",
+      flex: 1,
+    },
+    {
+      field: "asset_id",
+      headerName: "Asset ID",
+      flex: 1,
+    },
+    {
+      field: "serial_number",
+      headerName: "Serial #",
+      flex: 1,
+    },
+    {
+      field: "part_replaced",
+      headerName: "Part Replaced",
+      flex: 1,
+    },
+    {
+      field: "cost",
+      headerName: "Cost",
+      flex: 1,
+    },
+    {
+      field: "guardian_email",
+      headerName: "Guardian Email",
+      flex: 1,
+    },
+    {
+      field: "insurance",
+      headerName: "Insurance",
+      flex: 1,
+    },
+    {
+      field: "notes",
+      headerName: "Notes",
       flex: 1,
     },
   ];
